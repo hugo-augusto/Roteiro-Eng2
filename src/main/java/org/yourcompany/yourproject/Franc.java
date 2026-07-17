@@ -1,12 +1,11 @@
 package org.yourcompany.yourproject;
 
 public class Franc extends Money {
-
-    Franc(int amount) {
-        this.amount = amount;
+    Franc(int amount, String currency) {
+        super(amount, currency);
     }
 
-    Franc times(int multiplier) {
-        return new Franc(amount * multiplier);
+    Money times(int multiplier) {
+        return new Franc(amount * multiplier, currency);
     }
 }
