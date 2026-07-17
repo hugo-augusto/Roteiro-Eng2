@@ -1,12 +1,12 @@
 package org.yourcompany.yourproject;
 
-public class Dollar extends Money {
+public class Franc extends Money {
 
-    Dollar(int amount) {
+    Franc(int amount) {
         this.amount = amount;
     }
 
     Money times(int multiplier) {
-        return new Dollar(amount * multiplier);
+        return new Franc(amount * multiplier);
     }
 }
